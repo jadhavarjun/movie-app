@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #7b8391;
+  background-color: #31304d;
 }
 
 #nav {
@@ -27,7 +27,7 @@ body {
   outline: none;
 }
 #search-icon {
-  background-color: #7b8391;
+  background-color: #31304d;
   border: none;
   cursor: pointer;
 }
@@ -48,6 +48,14 @@ svg {
 .nf-desc {
   margin-top: 0;
   color: rgb(255, 255, 255);
+}
+.movieContainer {
+  margin-top: 80px;
+  justify-content: center;
+  display: flex;
+}
+.movie-details {
+  width: 50%;
 }
 .d-none {
   display: none !important;
