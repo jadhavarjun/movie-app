@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="images/title-icons.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <img src="./images/logo-d-plus.svg" alt="hotstar" id="img-icon" />
+      <div class="search">
+        <input type="text" id="movieName" onchange="searchMovie()" />
+        <button id="search-icon" onclick="searchMovie()">
+          <svg width="16" height="16" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="notFound" class="d-none">
+      <div class="icon">🤯</div>
+      <h2 class="nf-title">Couldn't Find "<span id="name"></span>"</h2>
+      <div class="nf-desc">
+        Try searching for something else or try with a different spelling
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
